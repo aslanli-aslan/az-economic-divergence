@@ -36,5 +36,4 @@ imports_pct_gdp = wbdata.get_dataframe({'NE.IMP.GNFS.ZS': 'imports_pct_gdp'}, co
 worldbank = pd.concat([total_gdp, unemployment_rate, exports_pct_gdp,gdp_growth, inflation, current_account, imports_pct_gdp], axis=1)
 worldbank.index.name = 'year'
 worldbank = worldbank.sort_index()
-worldbank = worldbank.loc['2000':'2024']
 worldbank.to_csv(RAW_DIR / 'worldbank.csv')

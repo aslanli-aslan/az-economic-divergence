@@ -10,5 +10,6 @@ wheels/
 .venv
 
 .env
-data/
+data/raw
+data/processed
 
