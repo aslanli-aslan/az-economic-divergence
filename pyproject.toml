@@ -1,0 +1,17 @@
+[project]
+name = "az-economic-divergence"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dash>=4.1.0",
+    "duckdb>=1.5.1",
+    "fredapi>=0.5.2",
+    "great-expectations>=1.15.2",
+    "ipykernel>=7.2.0",
+    "pandas>=3.0.2",
+    "plotly>=6.6.0",
+    "wbdata>=1.1.0",
+    "weo>=0.7.4",
+]
