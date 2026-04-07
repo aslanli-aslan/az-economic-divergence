@@ -12,6 +12,7 @@ dependencies = [
     "ipykernel>=7.2.0",
     "pandas>=3.0.2",
     "plotly>=6.6.0",
+    "python-dotenv>=1.2.2",
     "pyyaml>=6.0.3",
     "wbdata>=1.1.0",
     "weo>=0.7.4",
