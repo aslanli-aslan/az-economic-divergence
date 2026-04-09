@@ -14,7 +14,6 @@ Azerbaijan has one of the most interesting economic development stories in the w
 |---|---|---|
 | World Bank WDI | [data.worldbank.org](https://data.worldbank.org) | GDP, inflation, unemployment, trade; 7 indicators |
 | FRED - St. Louis Fed | [fred.stlouisfed.org](https://fred.stlouisfed.org) | CPI inflation, Brent oil price; 3 series |
-| IMF World Economic Outlook | [imf.org](https://www.imf.org) | GDP growth, inflation, unemployment, debt; 6 indicators |
 | Central Bank of Azerbaijan | [cbar.az](https://www.cbar.az) | USD/AZN official exchange rate |
 | State Statistical Committee | [stat.gov.az](https://www.stat.gov.az) | Oil/non-oil GDP split, wages, trade balance, regional output |
 
@@ -35,4 +34,5 @@ To collect data:
 ```bash
 uv run python src/azdata/collect/worldbank.py
 uv run python src/azdata/collect/fred.py
+uv run python src/azdata/collect/statgov.py
 ```
