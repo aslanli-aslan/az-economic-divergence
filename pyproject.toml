@@ -12,8 +12,17 @@ dependencies = [
     "ipykernel>=7.2.0",
     "pandas>=3.0.2",
     "plotly>=6.6.0",
+    "poethepoet>=0.44.0",
     "python-dotenv>=1.2.2",
     "pyyaml>=6.0.3",
+    "ruff>=0.15.10",
     "wbdata>=1.1.0",
     "weo>=0.7.4",
 ]
+
+[tool.poe.tasks]
+format = "uv run ruff format"
+fix    = "uv run ruff check --fix"
+
+[tool.ruff]
+select = ["E", "F", "I"]
