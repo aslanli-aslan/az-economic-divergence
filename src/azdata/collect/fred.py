@@ -1,6 +1,5 @@
 import os
 
-import pandas as pd
 from dotenv import load_dotenv
 from fredapi import Fred
 
@@ -18,7 +17,6 @@ oil_price = fred.get_series('DCOILBRENTEU', frequency="a", aggregation_method="a
 
 
 # Join and save
-fred_ = pd.concat([oil_price], axis=1, sort=True)
-fred_.columns = ["inflation_cpi", "inflation_cpi_imf", "oil_price"]
-fred_.index.name = "year"
-fred_.to_csv(RAW_DIR / "fred.csv")
+oil_price.name = "oil_price"
+oil_price.index.name = "year"
+oil_price.to_csv(RAW_DIR / "fred.csv")
